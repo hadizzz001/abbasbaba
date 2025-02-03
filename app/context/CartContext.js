@@ -33,17 +33,21 @@ const CartProvider = ({ children }) => {
   });
   
   const [quantities, setQuantities] = useState(() => {
+    if (typeof window !== "undefined"){
     const storedQuantities = localStorage.getItem('quantities');
     return storedQuantities ? JSON.parse(storedQuantities) : {};
+  }
   });
 
   const [subtotal, setSubtotal] = useState(0);
 
   useEffect(() => {
+    if (typeof window !== "undefined")
     localStorage.setItem('cart', JSON.stringify(cart));
   }, [cart]);
 
   useEffect(() => {
+    if (typeof window !== "undefined")
     localStorage.setItem('quantities', JSON.stringify(quantities));
   }, [quantities]);
 

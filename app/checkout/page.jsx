@@ -5,7 +5,7 @@
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
-import { fetchRate1 } from '@/utils'  
+ 
 import { useCart } from '../context/CartContext';
 import WhatsAppButton from "../../components/WhatsAppButton";
 

@@ -1,13 +1,13 @@
 "use client"
 
-import { Test, CarCard } from 'components'
+import { Test, CarCard } from '../../components'
 import { useState, useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper';
 import { useRouter } from 'next/navigation';
 import { useSearchParams } from 'next/navigation';
-import { fetchTemp4, fetchTemp1 } from '@/utils';
+import { fetchTemp4, fetchTemp1 } from '../../utils';
 import { useCart } from '../context/CartContext';
 import { useBooleanValue } from '../context/CartBoolContext';
 import QuantitySelector from '../../components/QuantitySelector';

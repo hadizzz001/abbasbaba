@@ -1,5 +1,5 @@
 "use client";
-import { fetchTemp, fetchTemp1, fetchTemp2 } from '@/utils'
+import { fetchTemp, fetchTemp1, fetchTemp2 } from '../../utils'
 import { useState, useEffect, useRef } from "react"; 
 
 

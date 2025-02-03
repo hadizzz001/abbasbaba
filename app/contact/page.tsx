@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useRouter } from 'next/navigation'
 import { useSearchParams } from 'next/navigation'
-import {sendEmail} from '@/app/api/sendEmail/sendEmail'
+import {sendEmail} from '../api/sendEmail/sendEmail'
 
  
 

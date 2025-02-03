@@ -1,9 +1,4 @@
-'use client'
-import { footerLinksAr, footerLinksEn } from '../constants'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useDrawerContext } from '../app/context/store'
-import useLocalStorage from '../hooks/useLocalStorage'
+'use client' 
 import { useState, useEffect } from 'react'
 import { sendEmail } from '../app/api/sendEmail/sendEmail'
 
